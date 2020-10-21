@@ -545,6 +545,8 @@ main .news_and_reviews .container .news .box {
           filter: blur(1.75px);
   background-size: cover;
   background-position: center;
+  -webkit-box-shadow: inset 2rem 2rem 4rem rgba(0, 0, 0, 0.25);
+          box-shadow: inset 2rem 2rem 4rem rgba(0, 0, 0, 0.25);
 }
 
 main .news_and_reviews .container .news .box .news-t {
@@ -651,17 +653,6 @@ main .news_and_reviews .container .news .right .rt {
 main .news_and_reviews .container .news .right .rb {
   background-image: url("../images/bg3.jpg");
   height: 60%;
-}
-
-main .news_and_reviews .container .news:after {
-  -webkit-box-shadow: inset 12rem 12rem 13rem rgba(0, 0, 0, 0.25);
-          box-shadow: inset 12rem 12rem 13rem rgba(0, 0, 0, 0.25);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: "";
 }
 
 main section {
