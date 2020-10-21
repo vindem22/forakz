@@ -1,0 +1,10 @@
+.offer-cards {
+    min-height: 80vh;
+    .container {
+        border: 1px solid red;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

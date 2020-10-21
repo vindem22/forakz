@@ -1,0 +1,134 @@
+.sign_up-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 56.5%;
+  margin: 0 auto;
+  background: white;
+  padding: 8rem 0 17rem 0;
+  .sign_up-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    .logo {
+      padding-bottom: 4rem;
+    }
+    .switchers {
+      width: 64%;
+      display: flex;
+      flex-direction: row;
+      .switch_btn {
+        flex: 1 1 26rem;
+        text-decoration: none;
+        color: $main-color;
+        padding: 0.8rem;
+        font-size: 1.5rem;
+        text-align: center;
+        border: 1px solid #cfcfcf;
+      }
+      .active {
+        border: 2px solid black;
+      }
+    }
+  }
+  .sign_up-media {
+    @include flex_col();
+    margin-bottom: 2.7rem;
+    .head {
+      margin-bottom: 2.7rem;
+      width: 100%;
+    }
+    .heading {
+      @include heading(2rem);
+    }
+    .auth_form-social_media {
+      @include flex_col();
+      width: 43%;
+      .icon-btn {
+        width: 100%;
+        padding: 0.8rem 0.9rem;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        .text {
+          text-transform: none;
+        }
+        .icon {
+          position: absolute;
+          width: 2.2rem;
+          height: 2.288rem;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+        .google {
+          background-image: url("../icons/google-icon.svg");
+        }
+        .vk {
+          background-image: url("../icons/vk-icon.svg");
+        }
+        .facebook {
+          background-image: url("../icons/facebook-icon.svg");
+        }
+        .twitter {
+          background-image: url("../icons/twitter-icon.svg");
+        }
+      }
+    }
+    .icon-btn:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .sign_up-form {
+    @include flex_col();
+    width: 100%;
+    .head {
+      margin-bottom: 2.7rem;
+      width: 100%;
+    }
+    .heading {
+      @include heading(2rem);
+    }
+    .sign_up-form {
+      display: flex;
+      width: 43%;
+      flex-direction: column;
+      label {
+        width: 100%;
+        text-transform: none;
+        font-style: normal;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+      input {
+        width: 100%;
+        padding: 0.8rem 0;
+      }
+      a {
+        text-transform: none;
+        padding: 0;
+        margin-bottom: 1rem;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: $main-color;
+      }
+      button {
+        width: 100%;
+        padding: 0.8rem 0;
+        margin-bottom: 2.7rem;
+        background: $main-bg-color;
+        color: $main-text-color;
+        border: none;
+        font-size: 1.5rem;
+      }
+      .club_card-checkbox {
+        display: flex;
+        width: 100%;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.sign_in-form {
+  @include flex_col();
+  width: 100%;
+  .head {
+    margin-bottom: 2.7rem;
+    width: 100%;
+  }
+  .heading {
+    @include heading(2rem);
+  }
+  .auth_form {
+    display: flex;
+    width: 43%;
+    flex-direction: column;
+    label {
+      text-transform: none;
+      font-style: normal;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    input {
+      width: 100%;
+      padding: 0.8rem 0;
+    }
+    a {
+      text-transform: none;
+      padding: 0;
+      margin-bottom: 1rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: $main-color;
+    }
+    button {
+      padding: 0.8rem 0;
+      margin-bottom: 2.7rem;
+      background: $main-bg-color;
+      color: $main-text-color;
+      border: none;
+      font-size: 1.5rem;
+    }
+  }
+}

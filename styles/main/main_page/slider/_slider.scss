@@ -1,0 +1,35 @@
+.slider {
+  width: 100%;
+  background-image: url("../images/slider-main.jpg");
+  background-position: 10% 20%;
+  background-size: cover;
+  padding: 11rem 0 5rem 0;
+  text-align: center;
+  color: $main-text-color;
+  h2 {
+    display: block;
+    font-size: 4rem;
+    line-height: 6rem;
+    margin-bottom: 1.2rem;
+  }
+  h1 {
+    font-size: 6.5rem;
+    line-height: 9.7rem;
+    letter-spacing: 0.285em;
+    margin-bottom: 10.6rem;
+  }
+  a {
+    font-size: 2rem;
+    display: inline-block;
+    padding: 2.2rem;
+    color: $main-text-color;
+    border-radius: 1rem;
+    background: linear-gradient(
+        0deg,
+        rgba(33, 33, 33, 0.31),
+        rgba(33, 33, 33, 0.31)
+      ),
+      linear-gradient(99.51deg, #68d4f8 -11.31%, #0b54c1 130.25%);
+    text-decoration: none;
+  }
+}

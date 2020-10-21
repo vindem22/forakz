@@ -1,0 +1,48 @@
+.sign_in-media {
+  @include flex_col();
+  .head {
+    margin-bottom: 2.7rem;
+    width: 100%;
+  }
+  .heading {
+    @include heading(2rem);
+  }
+  .auth_form-social_media {
+    @include flex_col();
+    width: 43%;
+    .icon-btn {
+      width: 100%;
+      padding: 0.8rem 0.9rem;
+      border: 1px solid black;
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      .text {
+        text-transform: none;
+      }
+      .icon {
+        position: absolute;
+        width: 2.2rem;
+        height: 2.288rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      .google {
+        background-image: url("../icons/google-icon.svg");
+      }
+      .vk {
+        background-image: url("../icons/vk-icon.svg");
+      }
+      .facebook {
+        background-image: url("../icons/facebook-icon.svg");
+      }
+      .twitter {
+        background-image: url("../icons/twitter-icon.svg");
+      }
+    }
+  }
+  .icon-btn:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,12 @@
+.sign_in-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 56.5%;
+  margin: 0 auto;
+  background: white;
+  padding: 8rem 0 17rem 0;
+  @import "./sign_in-head";
+  @import "./sign_in-form";
+  @import "./sign_in-media";
+}

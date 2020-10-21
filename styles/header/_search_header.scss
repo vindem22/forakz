@@ -1,0 +1,33 @@
+.search-header {
+  padding: 1.2rem 0 1.2rem 0;
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .search {
+    flex: 4;
+    input {
+      background: $main-bg-color;
+      padding: 0.8rem 1.7rem;
+      border: none;
+      color: $main-text-color;
+      border-radius: 1.4rem;
+      width: 100%;
+    }
+    input::placeholder {
+      opacity: 1;
+      color: $main-text-color;
+      font-size: 1.2rem;
+    }
+  }
+  .icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .icon {
+      margin: 0 0 0 2.5rem;
+    }
+  }
+}

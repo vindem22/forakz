@@ -1,0 +1,36 @@
+.top-header {
+  background-color: $main-bg-color;
+  padding: 0.8rem;
+  .faq-items {
+    margin: 0 auto;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      list-style: none;
+      a {
+        line-height: 1.8rem;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        color: $main-text-color;
+      }
+      .auth {
+        font-style: italic;
+        font-weight: 400;
+      }
+      .auth::before {
+        content: "";
+        display: block;
+        background-image: url("../icons/auth-icon.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 0.8rem;
+        height: 0.95rem;
+        float: left;
+        margin: 0.4rem 0.5rem;
+      }
+    }
+  }
+}
