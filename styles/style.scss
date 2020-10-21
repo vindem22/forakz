@@ -4,3 +4,6 @@
 @import "./main/main";
 @import "./main/signIn/sign_in";
 @import "./footer";
+.sign_in-popup {
+    display: none;
+}

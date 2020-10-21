@@ -1,0 +1,113 @@
+.news_and_reviews {
+    min-height: 80vh;
+    margin-bottom: 10rem;
+    text-align: center;
+    .container {
+        .head-text {
+            margin: 0rem 0 3rem 0;
+            h1 {
+              font-weight: 400;
+              line-height: 3.7rem;
+            }
+          }
+        .news {
+            display: grid;
+            position: relative;
+            height: 51.5rem;
+            width: 100%;
+            grid-template-columns: repeat(3,1fr);
+            .box {
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+                filter: blur(1.75px);
+                background-size: cover;
+                background-position: center;
+    
+                .news-t {
+                    display: none;
+                    position: absolute;
+                    bottom: 0%;
+                    color: white;
+                    padding: 1.5rem 2rem;
+                    background: rgba(0, 0, 0, 0.4);
+                    backdrop-filter: blur(1rem);
+                    text-decoration: none;
+                    h1 {
+                        text-transform: none;
+                        font-weight: normal;
+                        
+                        font-size: 1.5rem;
+                        line-height: 2.2rem;
+                        margin-bottom: 0.1rem;
+                    }
+                    p {
+                        text-transform: none;
+                        line-height: 1.8rem;
+                        text-align: left;
+                        font-size: 1.2rem;
+                    }
+                    p::after {
+                        content: " читать далее...";
+                        font-style: italic;
+                    }
+                }
+            }
+            .box:hover {
+                cursor: pointer;
+                transition: 0.4s all ease-in-out;
+                filter: none;
+                .news-t {
+                    transition: 0.5s all ease-in-out;
+                    display: block;
+                }
+            }
+            .left {
+                display: flex;
+                flex-direction: column;
+                .lt{
+                    height: 60%;
+                    background-image: url("../images/background1.jpg");
+                }
+                .lb {
+                    height: 40%;
+                    background-image: url("../images/bg6.jpg");
+                }
+            }
+            .mid {
+                display: flex;
+                flex-direction: column;
+                .mt,.mb{
+                    height: 27%;
+                    background-image: url("../images/bg5.jpg");
+                }
+                .m {
+                    height: 46%;
+                    background-image: url("../images/bg4.jpg");
+                }
+
+            }
+            .right {
+                display: flex;
+                flex-direction: column;
+                .rt {
+                    background-image: url("../images/bg2.jpg");
+                    height: 40%;
+                }
+                .rb {
+                    background-image: url("../images/bg3.jpg");
+                    height: 60%;
+                }
+            }
+        }
+        .news:after {
+            box-shadow: inset 12rem 12rem 13rem rgba(0, 0, 0, 0.25);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+        }
+    }
+}
